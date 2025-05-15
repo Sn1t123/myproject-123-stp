@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="obrazsaita.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Космос для школярів </title>
+
+</head>
+<body>
+
+<header>
+  <h1>Космос для школярів</h1>
+</header>
+
+<nav>
+<a href="storinka2.html">
+  <button>Планети</button>
+</a>
+<a href="storinka3.html">
+  <button>Наші Спутники</button>
+</a>
+<a href="storinka4.html">
+  <button>Відео про Сонячну Систему</button>
+</a>
+<a href="TEXPIDTRIMKA.html">
+  <button>Технічна Підтримка</button>
+</a>
+<a href="TEXPIDTRIMKA.html">
+  </a>
+</nav>
+
+<main>
+  <section id="planets">
+  <section id="facts">
+    <h2 class="centered-title">Цікаві факти про нашу сонячну систему</h2>
+ <div class="gallery">
+    <div class="planet-card">
+      <img src="9 planet.jpg" alt="Наша Сонячна система.">
+      <p>Сонячна система складається з дев'яти небесних тіл, кожне з яких унікальне: від розпеченого Меркурія до крижаного Плутона. Всі вони обертаються навколо нашого центрального світила — Сонця, створюючи захопливий космічний танець.</p>
+    </div>
+
+    <div class="planet-card">
+      <img src="solnishko.jpg" alt="Сонце">
+      <p>Сонце — це зірка, що знаходиться в центрі нашої Сонячної системи. Воно складається переважно з водню (близько 75%) і гелію (близько 24%), а також містить невеликі кількості інших елементів. Сонце є джерелом енергії для Землі, забезпечуючи світло та тепло через ядерні реакції, що відбуваються в його ядрі. Воно має діаметр близько 1,39 мільйона км і масу, що становить близько 99,86% маси всієї Сонячної системи.</p>
+    </div>
+  </div>
+<section class="fact-section">
+  <p id="fact">Натисни кнопку, щоб дізнатися факт!</p>
+  <button onclick="showFact()">Показати факт</button>
+</section>
+
+</main>
+
+<footer>
+  &copy; 2025 vshsuzirya.com.ua. Всі права захищені.
+</footer>
+<script src="javascriptik.js"></script>
+
+<script>
+  const facts = [
+    "Сонце містить 99,86% маси всієї Сонячної системи.",
+    "На Місяці немає атмосфери, тому там завжди тиша.",
+    "Одна доба на Венері довша, ніж її рік.",
+    "У космосі немає звуку, бо там вакуум."
+  ];
+
+  function showFact() {
+    const fact = facts[Math.floor(Math.random() * facts.length)];
+    document.getElementById('fact').textContent = fact;
+  }
+</script>
+
+</body>
+</html>
